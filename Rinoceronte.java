@@ -3,25 +3,24 @@ package com.mycompany.richardmirandaado1;
 
 
 
-public class Rinoceronte {
+public class Raposa {
 
 
  
 	private String nome;
 	private int idade;
-
+	private String cor;
 	private String habitat;
-	private String cor ;
+	
 
 // Construtor vazio
-	public Rinoceronte(String rinoceronte, int par, String cinza) {
+	public Raposa() {
 	}
 
-//  parâmetros para definir propriedades
-	public Rinoceronte(String nome, int idade, String habitat,String cor) {
+//  parâmetros de  propriedades do rinoceronte
+	public Raposa(String nome, int idade,String cor) {
 		this.nome = nome;
 		this.idade = idade;
-		this.habitat = habitat;
 		this.cor = cor;
 	}
 
@@ -34,13 +33,14 @@ public class Rinoceronte {
 		this.nome = nome;
 	}
 
-	public String getCor() {
-		return cor;
-	}
+	 public String getCor() {
+	        return cor;
+	    }
+
+	    public void setCor(String cor) {
+	        this.cor = cor;
+	    }
 	
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
 	public int getIdade() {
 		return idade;
 	}
@@ -49,13 +49,7 @@ public class Rinoceronte {
 		this.idade = idade;
 	}
 
-	public String getHabitat() {
-		return habitat;
-	}
 
-	public void setHabitat(String habitat) {
-		this.habitat = habitat;
-	}
 
 // Método referente ao Rinoceronte 
 	public void nadar() {
@@ -67,15 +61,17 @@ public class Rinoceronte {
 	}
 
 	public void habitat() {
-		System.out.println(nome +" == Savana (Africa)");
+		System.out.println(nome +" == Pantanal ");
 	}
 	public void habitat1() {
-		System.out.println(nome +"== Pantanos (Asia)");
+		System.out.println(nome +"== Cerrado  ");
 	}
 
     }
 
   
+
+    
 
     
 
