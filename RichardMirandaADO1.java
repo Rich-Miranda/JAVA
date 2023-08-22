@@ -24,15 +24,19 @@ public class RichardMirandaADO1 {
 
 		System.out.println("\n2.Animal: " + raposa2.getNome() + "\n Idade:" + raposa2.getIdade() + "\n COR: " + raposa2.getCor());
 
-		System.out.println("\n1- FUNÇÃO DO ANIMAL - " + raposa1.getNome() + ":");
-		raposa1.nadar();
+		
+		
+		System.out.println("\n - FUNÇÃO DO ANIMAL - " + raposa1.getNome() + ":");
+		raposa1.comendo();
 		System.out.println("HABITATT: ");
 		raposa1.habitat();
 		
-		System.out.println("\n - FUNÇÃO DO ANIMAL - " + raposa2.getNome() + ":");
-		raposa1.comendo();
+		
+		System.out.println("\n 2 - FUNÇÃO DO ANIMAL - " + raposa2.getNome() + ":");
+		
+		raposa2.nadar();
 		System.out.println("HABITATT: ");
-		raposa1.habitat1();
+		raposa2.habitat1();
     }
     
     
