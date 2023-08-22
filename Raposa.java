@@ -17,7 +17,7 @@ public class Raposa {
 	public Raposa() {
 	}
 
-//  parâmetros de  propriedades do rinoceronte
+//  parâmetros de  propriedades da Raposa
 	public Raposa(String nome, int idade,String cor) {
 		this.nome = nome;
 		this.idade = idade;
@@ -51,7 +51,7 @@ public class Raposa {
 
 
 
-// Método referente ao Rinoceronte 
+// Método referente ao Raposa 
 	public void nadar() {
 		System.out.println(nome + " está nadando no mar."); 
 	}
