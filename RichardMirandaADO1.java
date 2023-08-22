@@ -11,28 +11,30 @@ package com.mycompany.richardmirandaado1;
 public class RichardMirandaADO1 {
     
     
+
+    
+    
     public static void main(String[] args) {
-   	Rinoceronte rino1 = new Rinoceronte("Rinoceronte", 18, "Cinza", null);
-		Rinoceronte rino2 = new Rinoceronte("Rinoceronte ", 25 , "Preto", null);
+    	Raposa raposa1 = new Raposa("Raposa", 9, "Laranja");
+    	Raposa raposa2 = new Raposa("Raposa ", 12 , "Preto");
 
 		System.out.println("Animal Selecionado: \n");
 
-		System.out.println("1. Animal: " + rino1.getNome() + "\n Idade:" + rino1.getIdade() + "\n COR: " + rino1.getCor());
+		System.out.println("1. Animal: " + raposa1.getNome() + "\n Idade:" + raposa1.getIdade() + "\n COR: " + raposa1.getCor());
 
-		System.out.println("\n2.Animal: " + rino2.getNome() + "\n Idade:" + rino2.getIdade() + "\n COR: " + rino1.getCor());
+		System.out.println("\n2.Animal: " + raposa2.getNome() + "\n Idade:" + raposa2.getIdade() + "\n COR: " + raposa2.getCor());
 
-		System.out.println("\n1- FUNÇÃO DO ANIMAL - " + rino1.getNome() + ":");
-		rino1.nadar();
+		System.out.println("\n1- FUNÇÃO DO ANIMAL - " + raposa1.getNome() + ":");
+		raposa1.nadar();
 		System.out.println("HABITATT: ");
-		rino1.habitat();
+		raposa1.habitat();
 		
-		System.out.println("\n2 - FUNÇÃO DO ANIMAL- " + rino2.getNome() + ":");
-		rino2.comendo();
+		System.out.println("\n - FUNÇÃO DO ANIMAL - " + raposa2.getNome() + ":");
+		raposa1.comendo();
 		System.out.println("HABITATT: ");
-		rino2.habitat1();
+		raposa1.habitat1();
     }
     
     
         
     }
-
