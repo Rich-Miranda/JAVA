@@ -1,0 +1,186 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+
+public class forms extends JFrame implements ActionListener, ItemListener
+{
+	JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12;
+	JButton b1,b2;
+	JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
+	JComboBox combo,combo1;
+	
+	//public static void main(String[] args)
+	//{
+	//	JFrame janela = new forms();
+	//	janela.setUndecorated(true);
+	//	janela.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
+	//	janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	//	janela.setVisible(true);
+		
+	//}
+	
+	forms()
+	{
+		setTitle("Fórmulario");
+		setBounds(500,350,500,420); // X , Y ,LARGURA ,ALTURA
+		getContentPane().setBackground(new Color (150,150,100));
+		getContentPane().setLayout(new GridLayout(15,6));
+		
+		
+		label1 = new JLabel("1 - Endereço");
+		label1.setForeground(Color.black);
+		label1.setFont(new Font("",Font.BOLD,14));
+		
+		label2 = new JLabel("2 - Rua");
+		label2.setForeground(Color.black);
+		label2.setFont(new Font("",Font.BOLD,14));
+		
+		label3 = new JLabel("3 - CEP");
+		label3.setForeground(Color.black);
+		label3.setFont(new Font("",Font.BOLD,14));
+
+		label4 = new JLabel("4 - Nacionalidade");
+		label4.setForeground(Color.black);
+		label4.setFont(new Font("",Font.BOLD,14));
+		
+		label5 = new JLabel("5 - Estado civil");
+		label5.setForeground(Color.black);
+		label5.setFont(new Font("",Font.BOLD,14));
+		
+		label6 = new JLabel("6 - Sexo");
+		label6.setForeground(Color.black);
+		label6.setFont(new Font("",Font.BOLD,14));
+		
+		label7 = new JLabel("7 - Rua");
+		label7.setForeground(Color.black);
+		label7.setFont(new Font("",Font.BOLD,14));
+
+		label8 = new JLabel("8 - Numero");
+		label8.setForeground(Color.black);
+		label8.setFont(new Font("",Font.BOLD,14));
+		
+		label9 = new JLabel("9 - Bairro");
+		label9.setForeground(Color.black);
+		label9.setFont(new Font("",Font.BOLD,14));
+		
+		label10 = new JLabel("10 - cidade");
+		label10.setForeground(Color.black);
+		label10.setFont(new Font("",Font.BOLD,14));
+		
+		label11 = new JLabel("11 - Estado");
+		label11.setForeground(Color.black);
+		label11.setFont(new Font("",Font.BOLD,14));
+		
+		label12 = new JLabel("12 - Pais");
+		label12.setForeground(Color.black);
+		label12.setFont(new Font("",Font.BOLD,14));
+		
+		
+		
+		
+		b1 = new JButton("Prox");
+		b1.addActionListener(this);
+		
+		b2 = new JButton("Anterior");
+		b2.addActionListener(this);
+		
+		
+		t1 = new JTextField();
+		t2 = new JTextField();
+		t3 = new JTextField();
+		t4 = new JTextField();
+		t5 = new JTextField();
+		t6 = new JTextField();
+		t7 = new JTextField();
+		t8 = new JTextField();
+		t9 = new JTextField();
+		t10 = new JTextField();
+		t11 = new JTextField();
+		t12 = new JTextField();
+		
+		String[] Sexo = {"MASCULINO","FEMININO","NADA DECLARAR"};
+		combo = new JComboBox(Sexo);
+		//combo.addItemListener(this);
+		
+		String[] estado = {"SÃO PAULO","RIO","BAHIA","MATO GROSSO"};
+		combo1 = new JComboBox(estado);
+		//combo.addItemListener(this);
+		
+		getContentPane().add(label1);
+		getContentPane().add(t1);
+		
+		getContentPane().add(label2);
+		getContentPane().add(t2);
+		
+		getContentPane().add(label3);
+		getContentPane().add(t3);
+		
+		getContentPane().add(label4);
+		getContentPane().add(t4);
+		
+		getContentPane().add(label5);
+		getContentPane().add(t5);
+		
+		getContentPane().add(label6);
+		getContentPane().add(combo);
+		
+		
+		getContentPane().add(label7);
+		getContentPane().add(t7);
+		
+		getContentPane().add(label8);
+		getContentPane().add(t8);
+		
+		getContentPane().add(label9);
+		getContentPane().add(t9);
+		
+		getContentPane().add(label10);
+		getContentPane().add(t10);
+		
+		getContentPane().add(label11);
+		getContentPane().add(combo1);
+		
+		getContentPane().add(label12);
+		getContentPane().add(t12);
+		getContentPane().add(b1);
+		getContentPane().add(b2);
+		
+		
+		
+	}
+	
+	public void actionPerformed(ActionEvent e)
+	{
+		if(e.getSource()==b1) {
+				label6.setText("6 - Sexo: " + combo.getSelectedItem());
+		}
+		if(e.getSource()==b1)
+		JOptionPane.showMessageDialog(b1, "Cadastrado com sucesso");{
+			t1.setText("");
+			t2.setText("");
+			t3.setText("");
+			t4.setText("");
+		}
+		
+		if(e.getSource()== b1) {
+			JFrame janela = new quest();
+			janela.setUndecorated(true);
+			janela.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
+			janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			janela.setVisible(true);
+		}
+		if(e.getSource()== b2) {
+			JFrame janela = new prj();
+			janela.setUndecorated(true);
+			janela.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
+			janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			janela.setVisible(true);
+
+		}
+			
+	}
+	
+
+}
